@@ -1,1 +1,9 @@
+\_pycache__/
+*.pyc
+*.pyo
+*.log
+logs/
 .env
+*.db
+*.sqlite
+*.pid
