@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 from airflow.exceptions import AirflowException  # Import AirflowException
 
 # Constants
-API_KEY = '9a3315f0f60c8fddb1596256c82c4058'
+API_KEY = os.getenv("API_KEY")
 DB_PATH = "/opt/airflow/dags/db"
 TABLE_NAME = "merged_data"
 SELECTED_COLUMNS = ["city", "country", "population", "temperature", "weather_description"]
